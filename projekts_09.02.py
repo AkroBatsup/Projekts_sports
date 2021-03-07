@@ -1,6 +1,6 @@
 from math import *
-ned=float(input("Cik stundas sonedel ir tavs merkis sportot? - "))
-diena=["pirmdien","otrdien","tresdien","ceturtdien","piektdien","sestdien","svetdien"]
+ned=float(input("Cik stundas šonedēļ ir tavs mērķis sportot? - "))
+diena=["pirmdien","otrdien","trešdien","ceturtdien","piektdien","sestdien","svētdien"]
 kopa=0
 for i in diena:
     laiks=float(input("Cik stundas sportoji "+i+"? - "))    
@@ -8,8 +8,8 @@ for i in diena:
 kopa=round(kopa,2)
 ned=round(ned,2)
 if ned==kopa:
-    print("Sonedelas merkis ir izpildits!")
+    print("Šonedēļas mērķis ir izpildīts!")
 elif ned>kopa:
-    print("Sonedelas merkis nav izpildits, pietrukst ",ned-kopa,"stundas")
+    print("Šonedēļas mērķis nav izpildīts, pietrūkst ",ned-kopa,"stundas")
 elif kopa>ned:
-    print("Sonedelas merkis ir izpildits! Nosportots ",kopa-ned,"stundas vairak neka planots")
+    print("Šonedēļas mērķis ir izpildīts! Nosportots ",kopa-ned,"stundas vairāk nekā plānots")
